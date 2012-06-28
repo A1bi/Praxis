@@ -1,0 +1,140 @@
+body {
+	position: relative;
+	width: 938px;
+	margin: 15px auto;
+	font-family: "Myriad Pro", "Droid Sans", "Arial";
+	background: white url(/gfx/bg.png) repeat-x;
+	font-size: 18px;
+	color: #043448;
+}
+img {
+	border: none;
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+div.section {
+	position: relative;
+	width: 700px;
+	margin: 25px auto;
+}
+div.sep {
+	width: 848px;
+	height: 1px;
+	background: url(/gfx/sep.png) no-repeat;
+	margin: auto;
+}
+.noMargin {
+	margin: 0px auto !important;
+}
+div.shadow {
+	width: 754px;
+	height: 23px;
+	margin: 0px auto;
+}
+div.shadow.up {
+	background: url(/gfx/shadow_up.png) no-repeat;
+}
+div.shadow.down {
+	background: url(/gfx/shadow_down.png) no-repeat;
+}
+.hl {
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+.bigger {
+	font-size: 20px;
+}
+.indent {
+	padding-left: 40px;
+}
+
+#logo {
+	position: absolute;
+	width: 88px;
+	height: 226px;
+	background: url(/gfx/logo.png) no-repeat;
+	display: inline-block;
+	text-indent: -999px;
+	z-index: 2;
+}
+#content {
+	position: relative;
+	left: 30px;
+	width: 850px;
+}
+#head, #bottom {
+	position: relative;
+	color: #434343;
+	min-height: 90px;
+}
+#head .shadow, #head .sep {
+	position: absolute;
+	bottom: 0px;
+}
+#head .section {
+	font-size: 16px;
+	padding: 10px 0px 0px 30px;
+}
+#head .section .title {
+	font-size: 18px;
+	font-weight: bold;
+}
+#bottom .section {
+	margin-top: 10px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+#bottom .shadow {
+	position: absolute;
+	top: 0px;
+}
+#bottom .copyright {
+	color: #cccccc;
+}
+#bottom .column {
+	float: left;
+	padding-top: 5px;
+	padding-right: 25px;
+	height: 40px;
+}
+#bottom .column.bar {
+	border-left: 1px solid #cccccc;
+	padding-left: 25px;
+}
+#bottom table {
+	border-collapse: collapse;
+}
+#bottom table td {
+	padding: 0px;
+}
+#bottom table td.field {
+	padding-right: 5px;
+}
+
+
+.slides {
+	position: relative;
+	width: 700px;
+	height: 297px;
+}
+.slides div {
+	position: absolute;
+}
+.slides .slide {
+	top: 0px;
+	left: 0px;
+}
+.slides .slide .caption {
+	bottom: 10px;
+	left: 20px;
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 1px 4px black;
+}
