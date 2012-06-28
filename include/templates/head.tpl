@@ -33,7 +33,7 @@
 	<div id="logo">Praxis Dr. Oster</div>
 	<div id="content">
 		<div id="head">
-			<div class="section">
+			<div class="section noMargin">
 				<div class="title">Praxis Dr. med. Albrecht Oster</div>
 				<div>
 					Allgemeinmedizin<br />

@@ -11,10 +11,10 @@ img {
 	border: none;
 }
 @font-face {
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  src: local("Droid Sans"), local("DroidSans"), url(/media/fonts/droid.woff) format("woff");
 }
 
 div.section {
@@ -47,6 +47,7 @@ div.shadow.down {
 	font-size: 25px;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
+	text-decoration: underline;
 }
 .bigger {
 	font-size: 20px;
@@ -72,7 +73,7 @@ div.shadow.down {
 #head, #bottom {
 	position: relative;
 	color: #434343;
-	min-height: 90px;
+	min-height: 95px;
 }
 #head .shadow, #head .sep {
 	position: absolute;
@@ -80,7 +81,7 @@ div.shadow.down {
 }
 #head .section {
 	font-size: 16px;
-	padding: 10px 0px 0px 30px;
+	padding: 13px 0px 0px 30px;
 }
 #head .section .title {
 	font-size: 18px;
@@ -88,8 +89,7 @@ div.shadow.down {
 }
 #bottom .section {
 	margin-top: 10px;
-	padding-left: 20px;
-	font-size: 15px;
+	font-size: 14px;
 }
 #bottom .shadow {
 	position: absolute;
@@ -101,12 +101,12 @@ div.shadow.down {
 #bottom .column {
 	float: left;
 	padding-top: 5px;
-	padding-right: 25px;
+	padding-right: 24px;
 	height: 40px;
 }
 #bottom .column.bar {
 	border-left: 1px solid #cccccc;
-	padding-left: 25px;
+	padding-left: 24px;
 }
 #bottom table {
 	border-collapse: collapse;
