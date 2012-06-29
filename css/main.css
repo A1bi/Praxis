@@ -44,16 +44,30 @@ div.shadow.down {
 }
 .hl {
 	text-align: center;
-	font-size: 25px;
+	font-size: 28px;
 	letter-spacing: 3px;
 	margin-bottom: 20px;
-	text-decoration: underline;
+	font-weight: bold;
+}
+.hl .smaller {
+	font-size: 22px;
+	letter-spacing: 2px;
+	font-weight: normal;
 }
 .bigger {
 	font-size: 20px;
 }
 .indent {
 	padding-left: 40px;
+}
+div.columns {
+	overflow: auto;
+}
+div.columns div.column, div.columns div.bar {
+	float: left;
+}
+div.columns div.bar {
+	border-left: 1px solid #cccccc;
 }
 
 #logo {
@@ -99,14 +113,12 @@ div.shadow.down {
 	color: #cccccc;
 }
 #bottom .column {
-	float: left;
 	padding-top: 5px;
-	padding-right: 24px;
 	height: 40px;
 }
-#bottom .column.bar {
-	border-left: 1px solid #cccccc;
-	padding-left: 24px;
+#bottom .bar {
+	height: 40px;
+	margin: 0px 24px;
 }
 #bottom table {
 	border-collapse: collapse;
@@ -137,4 +149,26 @@ div.shadow.down {
 	color: white;
 	font-size: 30px;
 	text-shadow: 1px 1px 4px black;
+}
+.onCall .columns {
+	width: 100%;
+}
+.onCall .columns .column {
+	width: 44%;
+}
+.onCall .columns .bar {
+	height: 200px;
+	margin: 0px 5%;
+}
+.onCall .columns .hl {
+	font-size: 22px;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 5px;
+}
+.onCall .name {
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+.onCall .address {
+	margin-bottom: 11px;
 }

@@ -22,4 +22,28 @@
 		Psychotherapie
 	</p>
 </div>
+<div class="sep"></div>
+<div class="section onCall">
+	<div class="hl">
+		Notdienst in Kaisersesch
+		<div class="smaller">{$smarty.now|date_format:"%A, der %d. %B %Y"}</div>
+	</div>
+	<div class="columns">
+		<div class="column">
+			<div class="hl">Ärzte</div>
+			<div class="name bigger">Praxis Dr. Möller</div>
+			<div class="address">Hauptstraße 2<br />
+			Kaisersesch</div>
+			<div class="phone">Tel: 02653 7660</div>
+		</div>
+		<div class="bar"></div>
+		<div class="column">
+			<div class="hl">Apotheken</div>
+			<div class="name bigger">Römer Apotheke</div>
+			<div class="address">Bahnhofstraße 2<br />
+			Kaisersesch</div>
+			<div class="phone">Tel: 02653 1234</div>
+		</div>
+	</div>
+</div>
 {include file="foot.tpl"}

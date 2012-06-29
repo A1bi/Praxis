@@ -2,12 +2,13 @@
 		<div id="bottom">
 			<div class="shadow down"></div>
 			<div class="sep"></div>
-			<div class="section">
+			<div class="section columns">
 				<div class="column">
 					Masburger Straße 1c<br />
 					56759 Kaisersesch
 				</div>
-				<div class="column bar">
+				<div class="bar"></div>
+				<div class="column">
 					<table>
 						<tr>
 							<td class="field">Tel:</td>
@@ -19,10 +20,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="column bar">
+				<div class="bar"></div>
+				<div class="column">
 					e-mail: <script>document.write(deobfuscate("wiuznfuquow@qpruazxwqiqs-dwur-wozsztqezr.wqqduze"));</script>
 				</div>
-				<div class="column copyright bar">&copy; 2005 - 2012</div>
+				<div class="bar"></div>
+				<div class="column copyright">&copy; 2005 - 2012</div>
 			</div>
 		</div>
 	</div>
