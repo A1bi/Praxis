@@ -29,12 +29,12 @@
 			</div>
 		</div>
 	</div>
-	{if !$_config.dev && $_config.as_site && !$smarty.server.HTTPS}
+{if !$_config.dev && $_config.as_site && !$smarty.server.HTTPS}
 
 	<script>var as_site = {$_config.as_site};</script>
 	<script src="http://system.albisigns.de/stats.js"></script>
 	<noscript><img src="http://system.albisigns.de/stats{$_config.as_site}.png" alt="" /></noscript>
-	{/if}
 
+{/if}
 </body>
 </html>
