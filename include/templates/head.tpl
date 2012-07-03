@@ -7,6 +7,7 @@
 	<link rel="icon" type="image/png" href="/gfx/favicon.png" />
 	
 	<link rel="stylesheet" type="text/css" href="/css/main.css{fileVersion file="/css/main.css"}" />
+	<script src="/core/js/jquery.js"></script>
 	<script src="/js/main.js{fileVersion file="/js/main.js"}"></script>
 
 {if $cssfile != ""}
