@@ -31,25 +31,28 @@
 	<div class="columns">
 		<div class="column">
 			<div class="hl">Ärzte</div>
-			<div id="mapDoc" class="map"></div>
-			<div class="info">
-				<div class="name bigger">Praxis Dr. Möller</div>
-				<div class="address">Hauptstraße 2<br />
-				Kaisersesch</div>
-				<div class="phone">Tel: 02653 7660</div>
+			<div id="mapDoc" class="map">
+				<div class="info">
+					<div class="name bigger">Praxis Dr. Möller</div>
+					<div class="address">Hauptstraße 2<br />
+					Kaisersesch</div>
+					<div class="phone">Tel: 02653 7660</div>
+				</div>
 			</div>
 		</div>
 		<div class="bar"></div>
 		<div class="column">
 			<div class="hl">Apotheken</div>
-			<div id="mapPharma" class="map"></div>
-			<div class="info">
-				<div class="name bigger">Römer Apotheke</div>
-				<div class="address">Bahnhofstraße 2<br />
-				Kaisersesch</div>
-				<div class="phone">Tel: 02653 1234</div>
+			<div id="mapPharma" class="map">
+				<div class="info">
+					<div class="name bigger">Römer Apotheke</div>
+					<div class="address">Bahnhofstraße 2<br />
+					Kaisersesch</div>
+					<div class="phone">Tel: 02653 1234</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="smaller hcen">Kartendaten: CC-By-SA by <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a></div>
 </div>
 {include file="foot.tpl"}
