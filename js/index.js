@@ -1,13 +1,21 @@
 $(function () {
-	var initMap = function (id) {
+	var initMap = function (id, marker) {
 		var box = $("#"+id);
 	
 		var map = new Map(id);
-		map.registerLocations([[7.137041, 50.230914]]);
-		map.setCenter(0, 15);
-		map.map.moveByPx((box.parent().width() - box.next(".info").outerWidth(true)) / 2, 0);
+		map.registerLocations(mapData.locations);
+		map.registerIcons(mapData.icons);
+		
+		var markers = [mapData.markers[marker]];
+		if (mapData.markers[marker].loc != mapData.markers.oster.loc) {
+			markers.push(mapData.markers.oster);
+		}
+		map.addMarkers(markers);
+		
+		map.setCenter(mapData.markers[marker].loc, 16);
+		map.map.moveByPx(box.find(".info").position().left / 2 + 15, 0);
 	}
 	
-	initMap("mapDoc");
-	initMap("mapPharma");
+	initMap("mapDoc", "doc");
+	initMap("mapPharma", "pharma");
 });
