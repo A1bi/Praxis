@@ -1,0 +1,89 @@
+.slides {
+	position: relative;
+	width: 700px;
+	height: 297px;
+}
+.slides div {
+	position: absolute;
+}
+.slides .slide {
+	top: 0px;
+	left: 0px;
+}
+.slides .slide .caption {
+	bottom: 10px;
+	left: 20px;
+	color: white;
+	font-size: 30px;
+	text-shadow: 1px 1px 4px black;
+}
+
+.onCall .columns {
+	width: 100%;
+}
+.onCall .columns .column {
+	width: 44%;
+}
+.onCall .columns .bar {
+	margin: 0px 5%;
+}
+.onCall .columns .hl {
+	font-size: 22px;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 5px;
+}
+.onCall .info {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	z-index: 2;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 8px;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 1px 1px 6px #cccccc;
+}
+.onCall .name {
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+.onCall .address {
+	margin-bottom: 11px;
+}
+.onCall .column, .onCall .bar {
+	height: 270px;
+}
+.onCall .map {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+.onCall .map .olControlAttribution, .map .olControlScaleLine {
+	display: none;
+}
+.onCall .map .olMapViewport {
+	border-radius: 5px;
+	z-index: 1;
+}
+.onCall .map .olTileImage {
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+}
+.onCall .map .olPopup {
+	padding: 5px;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+	box-shadow: 1px 1px 6px #cccccc;
+}
+.onCall .smaller {
+	color: #cccccc;
+	margin-top: 5px;
+}
+.onCall .smaller a {
+	color: #cccccc;
+}
+.onCall .smaller a:hover {
+	text-decoration: none;
+}

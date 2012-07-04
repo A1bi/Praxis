@@ -1,4 +1,4 @@
-{include file="head.tpl" jsfiles=[["openlayers", 1], ["map", 0], ["index", 0]] head="index_head.tpl"}
+{include file="head.tpl" jsfiles=[["openlayers", 1], ["map", 0], ["index", 0]] head="index_head.tpl" cssfile="index"}
 <div class="section noMargin slides">
 	<div class="slide">
 		<img src="/gfx/slide.png" alt="" />
