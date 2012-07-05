@@ -33,10 +33,10 @@
 			<div class="hl">Ärzte</div>
 			<div id="mapDoc" class="map">
 				<div class="info">
-					<div class="name bigger">Praxis Dr. Möller</div>
-					<div class="address">Hauptstraße 2<br />
-					Kaisersesch</div>
-					<div class="phone">Tel: 02653 7660</div>
+					<div class="name bigger">{$addresses[$onCall[0]['address']]['name']}</div>
+					<div class="address">{$addresses[$onCall[0]['address']]['street']}<br />
+					{$addresses[$onCall[0]['address']]['city']}</div>
+					<div class="phone">Tel: {$addresses[$onCall[0]['address']]['tel']}</div>
 				</div>
 			</div>
 		</div>
@@ -45,10 +45,10 @@
 			<div class="hl">Apotheken</div>
 			<div id="mapPharma" class="map">
 				<div class="info">
-					<div class="name bigger">Römer Apotheke</div>
-					<div class="address">Bahnhofstraße 2<br />
-					Kaisersesch</div>
-					<div class="phone">Tel: 02653 1234</div>
+					<div class="name bigger">{$addresses[$onCall[1]['address']]['name']}</div>
+					<div class="address">{$addresses[$onCall[1]['address']]['street']}<br />
+					{$addresses[$onCall[1]['address']]['city']}</div>
+					<div class="phone">Tel: {$addresses[$onCall[1]['address']]['tel']}</div>
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,7 @@
 ini_set('display_errors','on');
 error_reporting(E_ALL ^ E_NOTICE);
 
-setlocale(LC_ALL, 'de_DE.UTF-8');
+setlocale(LC_TIME, 'de_DE.UTF-8');
 
 /**
  * redirects to given url
@@ -28,6 +28,10 @@ function loadComponent($component) {
 	if (file_exists($component)) {
 		require_once($component);
 	}
+}
+
+function getData($name) {
+	return json_decode(file_get_contents("./include/data/" . $name . ".json"), true);
 }
 
 

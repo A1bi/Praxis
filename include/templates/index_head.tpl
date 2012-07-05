@@ -15,23 +15,11 @@
 				}
 			],
 			"locations": [
-				[7.137041, 50.230914],
-				[7.13668, 50.230498],
-				[7.137878, 50.230165]
+{foreach $onCall as $addr}
+				[{$addresses[$addr['address']]['lon']}, {$addresses[$addr['address']]['lat']}],
+{/foreach}
+				[{$addresses[0]['lon']}, {$addresses[0]['lat']}]
 			],
-			"markers": {
-				"oster": {
-						"loc": 0,
-						"icon": "logo"
-				},
-				"doc": {
-						"loc": 0,
-						"icon": "red"
-				},
-				"pharma": {
-						"loc": 2,
-						"icon": "red"
-				}
-			}
+			"addresses": [{foreach $onCall as $addr}{$addr['address']}{if !$addr@last}, {/if}{/foreach}]
 		}
 	</script>

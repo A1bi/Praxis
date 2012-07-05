@@ -1,0 +1,56 @@
+[
+	{
+		"name":		"Praxis Dr. Oster",
+		"street":	"Masburger Straße 1c",
+		"plz":		"56759",
+		"city":		"Kaisersesch",
+		"tel":		"02653 3306",
+		"lon":		7.137041,
+		"lat":		50.230914
+	},
+	{
+		"name":		"Praxis Johann",
+		"street":	"Masburger Straße 2",
+		"plz":		"56759",
+		"city":		"Kaisersesch",
+		"tel":		"02653 98950",
+		"lon":		7.13817,
+		"lat":		50.23021
+	},
+	{
+		"name":		"Praxis Dr. Möller",
+		"street":	"Bahnhofstraße 10",
+		"plz":		"56759",
+		"city":		"Kaisersesch",
+		"tel":		"02653 7660",
+		"lon":		7.13661,
+		"lat":		50.23055
+	},
+	{
+		"name":		"Praxis Knichel-Staudt",
+		"street":	"Bahnhofstraße 24",
+		"plz":		"56759",
+		"city":		"Kaisersesch",
+		"tel":		"02653 3737",
+		"lon":		7.13361,
+		"lat":		50.23095
+	},
+	{
+		"name":		"Praxis Dr. Buff",
+		"street":	"Cochemer Straße 13",
+		"plz":		"56759",
+		"city":		"Kaisersesch",
+		"tel":		"02653 6006",
+		"lon":		7.14080,
+		"lat":		50.22905
+	},
+	{
+		"name":		"Römer Apotheke",
+		"street":	"Bahnhofstraße 2",
+		"plz":		"56759",
+		"city":		"Kaisersesch",
+		"tel":		"02653 6868",
+		"lon":		7.137878,
+		"lat":		50.230165
+	}
+]
