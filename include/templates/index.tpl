@@ -29,7 +29,7 @@
 		<div class="smaller">{$smarty.now|date_format:"%A, der %d. %B %Y"}</div>
 	</div>
 	<div class="columns">
-		<div class="column">
+		<div class="column small doc">
 			<div class="hl">Ärzte</div>
 			<div id="mapDoc" class="map">
 				<div class="info">
@@ -38,10 +38,11 @@
 					{$addresses[$onCall[0]['address']]['city']}</div>
 					<div class="phone">Tel: {$addresses[$onCall[0]['address']]['tel']}</div>
 				</div>
+				<div class="zoom">vergrößern</div>
 			</div>
 		</div>
-		<div class="bar"></div>
-		<div class="column">
+		<div class="bar small"></div>
+		<div class="column small pharma">
 			<div class="hl">Apotheken</div>
 			<div id="mapPharma" class="map">
 				<div class="info">
@@ -50,6 +51,7 @@
 					{$addresses[$onCall[1]['address']]['city']}</div>
 					<div class="phone">Tel: {$addresses[$onCall[1]['address']]['tel']}</div>
 				</div>
+				<div class="zoom">vergrößern</div>
 			</div>
 		</div>
 	</div>
