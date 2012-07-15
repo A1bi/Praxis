@@ -4,7 +4,7 @@ body {
 	margin: 15px auto;
 	font-family: "Myriad Pro", "Droid Sans", "Arial";
 	background: white url(/gfx/bg.png) repeat-x;
-	font-size: 18px;
+	font-size: 16px;
 	color: #043448;
 }
 img {
@@ -20,7 +20,7 @@ img {
 div.section {
 	position: relative;
 	width: 700px;
-	margin: 25px auto;
+	margin: 20px auto;
 }
 div.sep {
 	width: 848px;
@@ -44,27 +44,30 @@ div.shadow.down {
 }
 .hl {
 	text-align: center;
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 3px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	font-weight: bold;
 }
 .hl .smaller {
-	font-size: 22px;
+	font-size: 18px;
 	letter-spacing: 2px;
 	font-weight: normal;
 }
 .bigger {
-	font-size: 20px;
+	font-size: 18px;
 }
 .smaller {
-	font-size: 14px;
+	font-size: 13px;
 }
 .hcen {
 	text-align: center;
 }
 .indent {
 	padding-left: 40px;
+}
+p {
+	margin: 15px 0px;
 }
 div.columns {
 	overflow: auto;
@@ -105,7 +108,7 @@ div.columns div.bar {
 	padding: 13px 0px 0px 30px;
 }
 #head .section .title {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 }
 #bottom .section {

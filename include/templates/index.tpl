@@ -30,7 +30,7 @@
 	</div>
 	<div class="columns">
 		<div class="column small doc">
-			<div class="hl">Ärzte</div>
+			<div class="hl"><div class="smaller">Ärzte</div></div>
 			<div id="mapDoc" class="map">
 				<div class="info">
 					<div class="name bigger">{$addresses[$onCall[0]['address']]['name']}</div>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="bar small"></div>
 		<div class="column small pharma">
-			<div class="hl">Apotheken</div>
+			<div class="hl"><div class="smaller">Apotheken</div></div>
 			<div id="mapPharma" class="map">
 				<div class="info">
 					<div class="name bigger">{$addresses[$onCall[1]['address']]['name']}</div>
