@@ -4,12 +4,11 @@ include('include/main.php');
 if (empty($_GET['page'])) {
 	$_db = new database;
 
-	$result = $_db->query('	SELECT	address
+	$result = $_db->query('	SELECT	address, type
 							FROM	onCall
 							WHERE	DATE(day) = DATE(NOW())
-							GROUP BY type
 							');
-	$onCall = $result->fetchAll();
+	$onCall = $_db->fetchAll($result, 1);
 	
 	$addresses = getData("addresses");
 	

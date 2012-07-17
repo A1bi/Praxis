@@ -29,31 +29,29 @@
 		<div class="smaller">{$smarty.now|date_format:"%A, der %d. %B %Y"}</div>
 	</div>
 	<div class="columns">
-		<div class="column small doc">
-			<div class="hl"><div class="smaller">Ärzte</div></div>
-			<div id="mapDoc" class="map">
+{foreach [["doc", "Ärzte", "Doc"], ["pharma", "Apotheken", "Pharma"]] as $type}
+		<div class="column small {$type[0]}">
+			<div class="hl"><div class="smaller">{$type[1]}</div></div>
+			<div id="map{$type[2]}" class="map">
+{if $onCall[$type@index]['address'] != ""}
+{$address=$addresses[$onCall[$type@index]['address']]}
 				<div class="info">
-					<div class="name bigger">{$addresses[$onCall[0]['address']]['name']}</div>
-					<div class="address">{$addresses[$onCall[0]['address']]['street']}<br />
-					{$addresses[$onCall[0]['address']]['city']}</div>
-					<div class="phone">Tel: {$addresses[$onCall[0]['address']]['tel']}</div>
+					<div class="name bigger">{$address['name']}</div>
+					<div class="address">{$address['street']}<br />
+					{$address['city']}</div>
+					<div class="phone">Tel: {$address['tel']}</div>
 				</div>
 				<div class="zoom">vergrößern</div>
+{else}
+				<div class="unavail">
+					Der aktuelle Notdienst ist derzeit nicht verfügbar.
+					<br />Vielen Dank für Ihr Verständnis!
+				</div>
+{/if}
 			</div>
 		</div>
+{/foreach}
 		<div class="bar small"></div>
-		<div class="column small pharma">
-			<div class="hl"><div class="smaller">Apotheken</div></div>
-			<div id="mapPharma" class="map">
-				<div class="info">
-					<div class="name bigger">{$addresses[$onCall[1]['address']]['name']}</div>
-					<div class="address">{$addresses[$onCall[1]['address']]['street']}<br />
-					{$addresses[$onCall[1]['address']]['city']}</div>
-					<div class="phone">Tel: {$addresses[$onCall[1]['address']]['tel']}</div>
-				</div>
-				<div class="zoom">vergrößern</div>
-			</div>
-		</div>
 	</div>
 	<div class="smaller hcen">Kartendaten: CC-By-SA by <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a></div>
 </div>

@@ -15,11 +15,19 @@
 				}
 			],
 			"locations": [
+				[{$addresses[0]['lon']}, {$addresses[0]['lat']}],
 {foreach $onCall as $addr}
 				[{$addresses[$addr['address']]['lon']}, {$addresses[$addr['address']]['lat']}],
 {/foreach}
-				[{$addresses[0]['lon']}, {$addresses[0]['lat']}]
 			],
-			"addresses": [{foreach $onCall as $addr}{$addr['address']}{if !$addr@last}, {/if}{/foreach}]
+			"onCall": {
+{foreach $onCall as $addr}
+				"{$addr['type']}": {
+					"address": {$addr['address']},
+					"location": {$addr@index+1}
+				}{if !$addr@last},{/if}
+
+{/foreach}
+			}
 		}
 	</script>
